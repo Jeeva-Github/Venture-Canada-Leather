@@ -34,3 +34,6 @@
 /backend/ssl/
 
 # Ignore build and dist folders (backend doesn't have these, so we leave this empty)
+
+# Ignore backup zip files
+*.zip

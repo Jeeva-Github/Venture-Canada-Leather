@@ -1,4 +1,3 @@
-// models/Product.js
 const mongoose = require('mongoose');
 
 // Define the dimensions schema
@@ -17,6 +16,7 @@ const productSchema = new mongoose.Schema({
   dimensions: { type: dimensionsSchema, required: true },
   price: { type: Number, required: true },
   imageUrl: { type: String, required: true },
+  priority: { type: Number, default: 0 }, // New field for sorting priority
   updatedAt: { type: Date, default: Date.now }, // Automatically set to current date on creation
 });
 
