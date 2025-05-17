@@ -1,0 +1,113 @@
+/* General Container Padding */
+.home-container {
+  padding: 20px;
+}
+
+/* Hero Section */
+.hero-section {
+  background-color: #f5f5f5;
+  padding: 40px 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.hero-title {
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.hero-subtitle {
+  margin-bottom: 20px;
+}
+
+.hero-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.cta-buttons {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.cta-button {
+  margin: 10px;
+  min-width: 120px;
+  padding: 10px 20px;
+}
+
+/* Custom Sofa Section */
+.custom-sofa-section {
+  background-color: #f9f9f9;
+  padding: 40px 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 40px; /* Space between sections */
+}
+
+.option-card {
+  text-align: center;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.option-card i {
+  font-size: 3rem;
+  margin-bottom: 10px; /* Space between icon and title */
+}
+
+.option-title {
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.option-desc {
+  margin-top: 5px;
+}
+
+/* Features Section */
+.features-section {
+  padding: 40px 20px;
+}
+
+.feature-card {
+  text-align: center;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.option-card:hover, .feature-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Media Query for Small Screens */
+@media (max-width: 600px) {
+  .hero-title {
+    font-size: 1.5rem; /* Adjust size for smaller screens */
+  }
+
+  .hero-subtitle {
+    font-size: 1rem;
+  }
+
+  .cta-button {
+    width: 100%; /* Full-width buttons on mobile */
+    padding: 12px; /* Increased padding for better touch */
+  }
+
+  .option-card, .feature-card {
+    padding: 15px; /* Reduced padding for smaller screens */
+  }
+
+  .option-card i {
+    font-size: 2.5rem; /* Adjust icon size on small screens */
+  }
+}

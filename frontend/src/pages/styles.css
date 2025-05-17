@@ -1,0 +1,258 @@
+/* styles.css */
+
+/* Products.jsx styles /*
+
+/* Container styling */
+.container {
+    max-width: 1200px; /* Set a maximum width for the container */
+  }
+  
+  /* Header styling */
+  h1 {
+    font-family: 'Arial', sans-serif;
+    font-size: 2.5rem;
+    color: #333;
+    font-weight: 700;
+    margin-bottom: 2rem;
+  }
+  
+  h2 {
+    font-family: 'Arial', sans-serif;
+    font-size: 2rem;
+    color: #333;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+  }
+  
+  /* Custom options styling */
+/* Custom Made Sofa Section */
+.custom-options {
+  margin-top: 3rem;
+}
+
+.option-title {
+  font-size: 1.25rem;
+  font-weight: 500;
+  color: #333;
+  margin-top: 10px;
+}
+
+.option-desc {
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.icon-large {
+  font-size: 3rem;
+  color: #007bff;
+}
+
+@media (max-width: 768px) {
+  .option-title {
+    font-size: 1.1rem;
+  }
+
+  .option-desc {
+    font-size: 0.8rem;
+  }
+
+  .icon-large {
+    font-size: 2rem;
+  }
+}
+
+/* Card Styling */
+.card {
+  border-radius: 10px; /* Rounded corners for cards */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transitions */
+}
+
+.card:hover {
+  transform: scale(1.05);
+  transition: 0.3s ease-in-out;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+.card-img-top {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  height: 200px; /* Adjust image height */
+  object-fit: cover; /* Ensure images cover the area */
+}
+
+.card-body {
+  padding: 1.5rem; /* Padding inside card */
+}
+
+.card-title {
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.card-text {
+  font-size: 1rem;
+  color: #777;
+  margin-bottom: 1rem;
+}
+
+/* Button Styling */
+.btn-primary {
+  background-color: #007bff; /* Primary button color */
+  border: none;
+  border-radius: 5px; /* Rounded corners for buttons */
+  padding: 10px 20px;
+  transition: background-color 0.3s ease; /* Smooth transition on hover */
+}
+
+.btn-primary:hover {
+  background-color: #0056b3; /* Darker button color on hover */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .option-title {
+    font-size: 1.1rem; /* Adjust font size on smaller screens */
+  }
+
+  .card-img-top {
+    height: 150px; /* Smaller image height on smaller screens */
+  }
+
+  .container {
+    padding-left: 15px; /* Add padding for mobile view */
+    padding-right: 15px; /* Add padding for mobile view */
+  }
+}
+
+  
+
+/* Product Detail CSS */
+
+
+/* General container styles */
+.container {
+  padding: 20px;
+}
+
+.mt-5 {
+  margin-top: 3rem !important;
+}
+
+.row {
+  margin-bottom: 2rem;
+}
+
+/* Styling for Product Image */
+.product-image {
+  border-radius: 8px;
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Zoom image effect */
+.img-fluid:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Material badge styling */
+.badge {
+  padding: 0.5rem 1rem;
+  font-size: 0.9rem;
+  font-weight: bold;
+}
+
+.badge-danger {
+  background-color: #dc3545;
+  color: white;
+}
+
+.badge-info {
+  background-color: #17a2b8;
+  color: white;
+}
+
+/* CTA Buttons */
+.cta-section .btn {
+  margin-right: 10px;
+}
+
+.btn-primary {
+  background-color: #007bff;
+  border-color: #007bff;
+}
+
+.btn-success {
+  background-color: #28a745;
+  border-color: #28a745;
+}
+
+.btn-outline-secondary {
+  border-color: #6c757d;
+  color: #6c757d;
+}
+
+/* Breadcrumb styling */
+.breadcrumb {
+  background-color: transparent;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.breadcrumb-item a {
+  text-decoration: none;
+  color: #007bff;
+}
+
+.breadcrumb-item.active {
+  color: #6c757d;
+}
+
+/* Styling for related products */
+.related-products h3 {
+  margin-bottom: 1.5rem;
+}
+
+.related-products .col-md-4 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.related-products img {
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.related-products img:hover {
+  transform: scale(1.05);
+}
+
+.related-products p {
+  font-weight: 600;
+  margin-top: 10px;
+}
+
+/* Responsive Design 
+@media (max-width: 768px) {
+  .breadcrumb {
+    font-size: 0.9rem;
+  }
+
+  .cta-section .btn {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .col-md-6 {
+    margin-bottom: 2rem;
+  }
+
+  .related-products img {
+    width: 100%;
+  }
+} */

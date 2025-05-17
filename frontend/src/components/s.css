@@ -1,0 +1,53 @@
+/* Navbar style.css */
+
+.navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .navbar-title {
+    font-weight: bold;
+  }
+  
+  .navbar-buttons {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+  }
+  
+  .nav-button {
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  .nav-button:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+  }
+  
+  .active {
+    border-bottom: 2px solid white;
+  }
+  
+  .drawer-menu {
+    width: 250px; /* Width of the drawer */
+    padding: 20px;
+  }
+  
+  .drawer-header {
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  .menu-icon {
+    display: none; /* Hide the hamburger icon by default */
+  }
+  
+  /* Responsive styles */
+  @media (max-width: 600px) {
+    .navbar-buttons {
+      display: none; /* Hide regular buttons on small screens */
+    }
+    .menu-icon {
+      display: block; /* Show the hamburger icon on small screens */
+    }
+  }
